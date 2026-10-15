@@ -31,3 +31,5 @@ def plusOne(self, digits: list[int]) -> list[int]:
                 return digits
             digits[i] = 0
         return [1] + digits
+    
+# try in leetcode -> https://leetcode.com/problems/plus-one/description/?envType=problem-list-v2&envId=array

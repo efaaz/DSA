@@ -23,3 +23,5 @@ def moveZeroes(self, nums: list[int]) -> None:
         if nums[i] != 0:
             nums[i], nums[j] = nums[j], nums[i]
             j += 1
+            
+# try in leetcode -> https://leetcode.com/problems/move-zeroes/description/?envType=problem-list-v2&envId=array

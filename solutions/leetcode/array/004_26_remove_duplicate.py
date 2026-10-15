@@ -25,3 +25,5 @@ def removeDuplicates(self, nums: list[int]) -> int:
             k += 1
             nums[k] = nums[i]
     return k+1
+
+# try in leetcode -> https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/?envType=problem-list-v2&envId=array
