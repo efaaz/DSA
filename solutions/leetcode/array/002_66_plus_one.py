@@ -24,12 +24,19 @@
 # Incrementing by one gives 9 + 1 = 10.
 # Thus, the result should be [1,0]
 
-def plusOne(self, digits: list[int]) -> list[int]:
+def plusOne(digits: list[int]) -> list[int]:
         for i in range(len(digits)-1, -1, -1):
             if digits[i] < 9:
                 digits[i] += 1
                 return digits
             digits[i] = 0
         return [1] + digits
+    
+arr = [2,9,9]
+newarr = plusOne(arr)
+for i in newarr:
+    print(i, end=" ")
+# time complexity O(n)
+# space complexity O(1)
     
 # try in leetcode -> https://leetcode.com/problems/plus-one/description/?envType=problem-list-v2&envId=array
